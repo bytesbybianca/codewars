@@ -1,6 +1,7 @@
 // ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * 
 //////////////////////////////////
 // Count the divisors of a number
+// https://www.codewars.com/kata/542c0f198e077084c0000c2e
 //////////////////////////////////
 // ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * 
 
@@ -20,7 +21,6 @@ function getDivisorsCnt(n){
     return count
   }
   
-  console.log(getDivisorsCnt(10))
   
   // Best practice solution
   

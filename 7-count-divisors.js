@@ -1,10 +1,14 @@
-// ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * 
-//////////////////////////////////
+// ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
+//////////////////////////////////////////
 // Count the divisors of a number
-// https://www.codewars.com/kata/542c0f198e077084c0000c2e
-//////////////////////////////////
-// ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * 
+//////////////////////////////////////////
+// ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ * ~ *
 
+// URL
+// https://www.codewars.com/kata/542c0f198e077084c0000c2e
+
+
+// INSTRUCTIONS
 // Count the number of divisors of a positive integer n.
 
 // Random tests go up to n = 500000.

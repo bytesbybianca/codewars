@@ -17,7 +17,6 @@
 // SOLUTION
 function count (string) {  
    let tally = { }
-  //  if(!string.length) return {}
    string.split('').map(x => {
      !tally[x] ? tally[x] = 1 : tally[x] += 1
    })

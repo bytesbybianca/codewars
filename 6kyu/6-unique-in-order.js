@@ -14,13 +14,11 @@
 
 // SOLUTION
 var uniqueInOrder=function(iterable){
-  // find unique characters
-  // let commons = []
   let arr = []
-  if(typeof iterable == 'string') iterable = iterable.split('')
-
+  if(typeof iterable == 'string') {
+    iterable = iterable.split('')
+  } 
     iterable.map((num, i) => iterable[i+1] == num ? null : arr.push(num))
-  // return in order
   return arr
 }
 

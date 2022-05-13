@@ -22,10 +22,11 @@ var repeatIt = function(str, n) {
 // E: "Hi", 2 --> "HiHi"
 // P: conditional str length > repeat method on str n number of times
 // conditional else > "Not a String"
-  return str.length ? str.repeat(n) : "Not a String"
+  return str.length ? str.repeat(n) : "Not a string"
 }
 
 
 // TEST CASES
 console.log(repeatIt("*",3), "***")
+console.log(repeatIt([],), "***")
 console.log(repeatIt("Hello",11), "HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello")

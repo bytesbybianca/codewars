@@ -28,12 +28,12 @@ function vowelChange(str, vow) {
   // define vowels
   let vowels = 'aeiou'
   // split string to isolate each letter
-  return str.split('').map(letter => vowels.includes(letter) ? vow : letter).join('')
-  // map to determine if letter is a vowel
-
-  // if a vowel, return specified vowel instead
-
-  // join
+  return str.split('')
+            // map to determine if letter is a vowel
+              // if a vowel, return specified vowel instead
+            .map(letter => vowels.includes(letter) ? vow : letter)
+            // join
+            .join('')
 }
 
 

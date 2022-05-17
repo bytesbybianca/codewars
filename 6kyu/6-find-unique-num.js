@@ -19,7 +19,6 @@
 
 // SOLUTION
 function findUniq(arr) {
-  // return arr.map(num => arr.indexOf(num) === arr.lastIndexOf(num) ? num : 'null')
   for(const num of arr) {
     if(arr.indexOf(num) === arr.lastIndexOf(num)) return num
   }

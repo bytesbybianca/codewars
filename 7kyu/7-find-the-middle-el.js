@@ -28,7 +28,7 @@
 // SOLUTION
 function gimme(triplet) {
   // sort array
-  let middle = [...triplet].sort((a, z) => a-z)[1]
+  let middle = [...triplet].sort((a, z) => a-z)[1] // spread operator to not mutate original array
   // return index of middle number
   return triplet.indexOf(middle)
 }

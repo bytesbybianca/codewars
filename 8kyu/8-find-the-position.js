@@ -17,12 +17,11 @@
 
 // SOLUTION
 function position(letter){
-  return letter.charCodeAt()-96
-  //Write your own Code!
+  return `Position of alphabet: ${letter.charCodeAt()-96}`
   }
 
 
 // // TEST CASES
 console.log(position("a"),"Position of alphabet: 1");
 console.log(position("z"),"Position of alphabet: 26");
-console.log(position("e"),"Position of alphabet: 5");
+console.log(position("e"),"Position of alphabet: 5");           

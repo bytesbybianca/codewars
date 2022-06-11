@@ -28,7 +28,6 @@ function solution(string) {
   return string.split('')
   // check if capital
   .map((x, i) => x === x.toUpperCase() ? ` ${x}` : x)
-  // if capital, split and index minus 1
   .join('')
 }
 

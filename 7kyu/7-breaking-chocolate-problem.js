@@ -20,7 +20,7 @@ If input data is invalid you should return 0 (as in no breaks are needed if we d
 
 // SOLUTION
 function breakChocolate(n,m) {
-  return n * m - 1;
+  return n === 0 || m === 0 ? 0 : n * m - 1;
 }
 
 // TEST CASES

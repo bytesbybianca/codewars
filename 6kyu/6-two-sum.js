@@ -27,26 +27,41 @@ E:
 
 
 // SOLUTION
-function twoSum(numbers, target) {
-   let pair
-   let sum
-   // loop through array
-   for(let i = 0; i < numbers.length; i++) {
-      if(sum != target) {
-         // find all sums of all pairs of integers
-         // store integers in another array
-         if(i == numbers.length-1) {
-            sum = numbers[0] + numbers[i]
-            pair = [numbers[0], numbers[i]]
-         } else {
-            sum = numbers[i] + numbers[i+1]
-            pair = [numbers[i], numbers[i+1]]
-         }
-      }
-   }
-   // find the indices of the integers in array
-   return [numbers.indexOf(pair[0]), numbers.lastIndexOf(pair[1])]
- }
+var twoSum = function(nums, target) {
+   if(nums.length === 2) return [0, 1]
+   // for each element, add to every other element
+   for(let i = 0; i < nums.length; i++) {
+       for(let j = 0; j < nums.length; j++) {
+           // if sum === target, find the indicies
+           if(i !== j && nums[i] + nums[j] === target) {
+               // return in an array
+                   return [i, j]
+               }
+           }
+       }
+   };
+
+// FIRST SOLUTION
+// function twoSum(numbers, target) {
+//    let pair
+//    let sum
+//    // loop through array
+//    for(let i = 0; i < numbers.length; i++) {
+//       if(sum != target) {
+//          // find all sums of all pairs of integers
+//          // store integers in another array
+//          if(i == numbers.length-1) {
+//             sum = numbers[0] + numbers[i]
+//             pair = [numbers[0], numbers[i]]
+//          } else {
+//             sum = numbers[i] + numbers[i+1]
+//             pair = [numbers[i], numbers[i+1]]
+//          }
+//       }
+//    }
+//    // find the indices of the integers in array
+//    return [numbers.indexOf(pair[0]), numbers.lastIndexOf(pair[1])]
+//  }
  
 
 // // TEST CASES

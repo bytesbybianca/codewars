@@ -31,14 +31,14 @@ function solution(digits){
   // loop through string of numbers
   let chunk
   digits.split('').map((x, i) => {
+    // pass chunks of 5 digits into array
     chunk = Number([x, digits[i+1], digits[i+2], digits[i+3], digits[i+4]].join(''))
     arr.push(chunk)
+    // redefine chunk
     chunk = ''
   })
-  return Math.max(...arr)
-  // pass chunks of 5 digits into array
-  // redefine chunk
   // return max number
+  return Math.max(...arr)
 }
 
 // TEST CASES

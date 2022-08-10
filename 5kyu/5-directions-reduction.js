@@ -38,6 +38,7 @@ function dirReduc(arr){
   let dirArr = []
   arr.map(direction => {
     const last = dirArr[dirArr.length - 1]
+    
     if( (direction === "NORTH" && last === "SOUTH") ||
     (direction === "SOUTH" && last === "NORTH") ||
     (direction === "EAST" && last === "WEST") ||

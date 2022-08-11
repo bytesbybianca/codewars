@@ -23,9 +23,10 @@ If a string contains all repeating characters, it should return an empty string 
 // SOLUTION
 function firstNonRepeatingLetter(s) {
   for(let i = 0; i < s.length; i++) {
+    let lowerS = s.toLowerCase()
     if(s.length == 1) {
       return s
-    } else if(s.indexOf(s[i]) === s.lastIndexOf(s[i])) {
+    } else if(lowerS.indexOf(lowerS[i]) === lowerS.lastIndexOf(lowerS[i])) {
       return s[i]
     }
   }
@@ -35,6 +36,7 @@ function firstNonRepeatingLetter(s) {
 // TEST CASES
 console.log(firstNonRepeatingLetter('a'), 'a');
 console.log(firstNonRepeatingLetter('stress'), 't');
+console.log(firstNonRepeatingLetter('sTreSS'), 'T');
 console.log(firstNonRepeatingLetter('moonmen'), 'e');
 console.log(firstNonRepeatingLetter('moonmEn'), 'E');
 console.log(firstNonRepeatingLetter(''), '');

@@ -30,7 +30,7 @@ six_toast(12) == 6
 
 // SOLUTION
 function sixToast(num) {
-  // you code here
+  return num <= 6 ? 6 - num : num - 6
 }
 
 // TEST CASES

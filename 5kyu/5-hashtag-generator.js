@@ -34,16 +34,12 @@ P:
 
 // SOLUTION
 function generateHashtag (str) {
-   // if empty string or str.length >= 139, return false
-   if(!str.trim().length || str.split('').filter(x => x != ' ').join('').length > 139) return false
-   // else, make str lowercase
-   let splitStr = str.toLowerCase()
-   // split str to each word
-   .split(' ').filter(x => x.toUpperCase() != x.toLowerCase())
-   // for each element, return x[0] capitalized, then the rest of the word
-   return `#${splitStr.filter(x => x.length).map(x => x[0].toUpperCase() + x.slice(1)).join('')}`
-
-}
+   let trimmedLength = str.trim().length
+   if(!trimmedLength) return false
+   let hashtag = '#' + str.trim().split(' ').filter(x => x !== '').map((x, i) => x[0].toUpperCase() + x.slice(1)).join('')
+   if(hashtag.length > 140) return false
+   return hashtag
+ }
 
 // // TEST CASES
 console.log(generateHashtag(""), false, "Expected an empty string to return false")

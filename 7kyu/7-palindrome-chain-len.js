@@ -43,13 +43,6 @@ var palindromeChainLength = function(n) {
     reversedNum = Number(n.toString().split('').reverse().join(''))
     count++
   }
-  // let count = 0
-  // let palindrome = Number((n + '').split('').reverse().join(''));
-  // while (palindrome !== n) {
-  //   n = Number(n) + Number(palindrome);
-  //   palindrome = Number((n + '').split('').reverse().join(''));
-  //   count++
-  // }
 
   return count
 };

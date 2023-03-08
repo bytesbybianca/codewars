@@ -29,10 +29,11 @@ Examples
 function vaporcode(string) {
   let result = ""
   for(let i = 0; i < string.length; i++) {
+    let char = string[i].toUpperCase()
     if(i === 0) {
-      result += string[i]
-    } else {
-      result += `  ${string[i]}`
+      result += char
+    } else if(char !== ' ') {
+      result += `  ${char}`
     }
   }
 

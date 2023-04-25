@@ -34,7 +34,9 @@ To keep the things simple, we'll consider that any "numbered thing" in the strin
 function hydrate(s) {
   let drinkCount = 0
   for(const char of s) {
-    if(char.charCodeAt() >= 48 && char.charCodeAt() <= 57) drinkCount++
+    if(char.charCodeAt() >= 48 && char.charCodeAt() <= 57) {
+      drinkCount += Number(char)
+    }
   }
 
   return `${drinkCount} ${drinkCount >= 2 ? 'glasses' : 'glass'} of water`

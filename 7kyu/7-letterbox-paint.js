@@ -57,6 +57,7 @@ var paintLetterboxes = function(start, end) {
   for(let i = 0; i <= 9; i++) {
     numberMap[i] = 0
   }
+
   for(let i = start; i <= end; i++) {
     for(const num of String(i)) {
       if(numberMap[num]) {
@@ -66,6 +67,7 @@ var paintLetterboxes = function(start, end) {
       }
     }
   }
+  
   return Object.values(numberMap)
 }
 

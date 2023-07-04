@@ -31,7 +31,7 @@ Do not expect any negative or invalid inputs.
 */
 function save(sizes, hd) {
   let count = 0
-  let sum = 0
+  
   for(let i = 0; i < sizes.length; i++) {
     let currentSize = sizes.slice(0, i + 1).reduce((acc, c) => acc + c, 0)
     if(currentSize === hd) {
@@ -46,6 +46,7 @@ function save(sizes, hd) {
     }
     count++
   }
+  
   return count
 }
 

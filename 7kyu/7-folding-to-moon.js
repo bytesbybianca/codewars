@@ -20,6 +20,7 @@ You know that a piece of paper has a thickness of 0.0001m. Given distance in uni
 Note: Of course you can't do half a fold. You should know what this means ;P
 
 */
+
 /* SOLUTION
 
 */

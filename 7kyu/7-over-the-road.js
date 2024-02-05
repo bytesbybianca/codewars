@@ -51,7 +51,6 @@ function overTheRoad(address, n) {
 		housesFromRoad = address / 2 - 1;
 		oppositeHouse = lastOddHouse - housesFromRoad * 2;
 	}
-	console.log(housesFromRoad, oppositeHouse);
 	return oppositeHouse;
 }
 

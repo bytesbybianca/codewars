@@ -65,31 +65,3 @@ console.log(
 		.split("")
 		.map((a, b) => 50 - b)
 );
-// console.log(
-// 	distancesFromAverage(
-// 		Array(1002)
-// 			.join("a")
-// 			.split("")
-// 			.map((a, b) => b)
-// 	).join(",") ==
-// 		Array(1002)
-// 			.join("a")
-// 			.split("")
-// 			.map((a, b) => 500 - b)
-// 			.join(","),
-// 	true
-// ); //not to flood the console...
-// console.log(
-// 	distancesFromAverage(
-// 		Array(100002)
-// 			.join("a")
-// 			.split("")
-// 			.map((a, b) => b)
-// 	).join(",") ==
-// 		Array(100002)
-// 			.join("a")
-// 			.split("")
-// 			.map((a, b) => 50000 - b)
-// 			.join(","),
-// 	true
-// );

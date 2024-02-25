@@ -27,7 +27,6 @@ Note that your boss is in the room (boss), their score is worth double it's face
 
 */
 function outed(meet, boss) {
-	console.log(meet[boss]);
 	return Object.values(meet).reduce((acc, c) => acc + c, meet[boss]) /
 		Object.values(meet).length <=
 		5
